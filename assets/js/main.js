@@ -8,6 +8,7 @@ const fetchData = async () => {
 
         const json = await response.json();
         const results = json.results;
+        console.log('results ', results);
         
         return results || [];
     } catch (error) {
